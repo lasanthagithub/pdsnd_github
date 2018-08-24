@@ -9,8 +9,7 @@ def filter_data(data, condition):
     Takes a data list as input and returns a filtered list.
     Conditions should be a list of strings of the following format:
       '<field> <op> <value>'
-    where the following operations are valid: >, <, >=, <=, ==, !=
-    
+    where the following operations are valid: >, <, >=, <=, ==, !=    
     Example: ["duration < 15", "start_city == 'San Francisco'"]
     """
 
@@ -81,7 +80,6 @@ def usage_stats(data, filters = [], verbose = True):
 
     # Return three-number summary
     return duration_qtiles
-
 
 def usage_plot(data, key = '', filters = [], **kwargs):
     """
