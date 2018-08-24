@@ -9,8 +9,7 @@ def filter_data(data, condition):
     Takes a data list as input and returns a filtered list.
     Conditions should be a list of strings of the following format:
       '<field> <op> <value>'
-    where the following operations are valid: >, <, >=, <=, ==, !=
-    
+    where the following operations are valid: >, <, >=, <=, ==, !=    
     Example: ["duration < 15", "start_city == 'San Francisco'"]
     """
 
@@ -82,18 +81,17 @@ def usage_stats(data, filters = [], verbose = True):
     # Return three-number summary
     return duration_qtiles
 
-
 def usage_plot(data, key = '', filters = [], **kwargs):
     """
     Plot number of trips, given a feature of interest and any number of filters
     (including no filters). Function takes a number of optional arguments for
     plotting data on continuously-valued variables:
-      - n_bins: number of bars (default = 10)
-      - bin_width: width of each bar (default divides the range of the data by
-        number of bins). "n_bins" and "bin_width" cannot be used simultaneously.
-      - boundary: specifies where one of the bar edges will be placed; other
-        bar edges will be placed around that value (may result in an additional
-        bar being plotted). Can be used with "n_bins" and "bin_width".
+         - n_bins: number of bars (default = 10)
+         - bin_width: width of each bar (default divides the range of the data by
+           number of bins). "n_bins" and "bin_width" cannot be used simultaneously.
+         - boundary: specifies where one of the bar edges will be placed; other
+           bar edges will be placed around that value (may result in an additional
+           bar being plotted). Can be used with "n_bins" and "bin_width".
     """
     
     # Check that the key exists
@@ -138,7 +136,7 @@ def usage_plot(data, key = '', filters = [], **kwargs):
         min_value = data[key].min()
         max_value = data[key].max()
         value_range = max_value - min_value
-        n_bins = 10
+        n_bins = 15
         bin_width = float(value_range) / n_bins
 
         if kwargs and 'n_bins' in kwargs:
