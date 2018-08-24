@@ -4,8 +4,7 @@
 ### Project Title
 Bike Share Data Analysis
 
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-## Information about the Bike share data.
+### Information about the Bike share data.
 
 Bay\_Area\_Bike\_Share\_Analysis.ipynb - Main project file.
 
