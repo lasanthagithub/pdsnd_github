@@ -86,12 +86,12 @@ def usage_plot(data, key = '', filters = [], **kwargs):
     Plot number of trips, given a feature of interest and any number of filters
     (including no filters). Function takes a number of optional arguments for
     plotting data on continuously-valued variables:
-      - n_bins: number of bars (default = 10)
-      - bin_width: width of each bar (default divides the range of the data by
-        number of bins). "n_bins" and "bin_width" cannot be used simultaneously.
-      - boundary: specifies where one of the bar edges will be placed; other
-        bar edges will be placed around that value (may result in an additional
-        bar being plotted). Can be used with "n_bins" and "bin_width".
+         - n_bins: number of bars (default = 10)
+         - bin_width: width of each bar (default divides the range of the data by
+           number of bins). "n_bins" and "bin_width" cannot be used simultaneously.
+         - boundary: specifies where one of the bar edges will be placed; other
+           bar edges will be placed around that value (may result in an additional
+           bar being plotted). Can be used with "n_bins" and "bin_width".
     """
     
     # Check that the key exists
