@@ -136,7 +136,7 @@ def usage_plot(data, key = '', filters = [], **kwargs):
         min_value = data[key].min()
         max_value = data[key].max()
         value_range = max_value - min_value
-        n_bins = 10
+        n_bins = 15
         bin_width = float(value_range) / n_bins
 
         if kwargs and 'n_bins' in kwargs:
